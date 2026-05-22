@@ -3,7 +3,9 @@ import os
 from .infusion_pump import Medfusion4000PumpSoundSynthesizer
 
 
-def generate_examples(output_dir=os.path.join("output", "medfusion_4000", "pump")):
+def generate_examples(
+    output_dir=os.path.join("output", "smiths_medical", "medfusion_4000")
+):
     synth = Medfusion4000PumpSoundSynthesizer()
     os.makedirs(output_dir, exist_ok=True)
 
